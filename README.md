@@ -10,4 +10,4 @@ Welcome to my personal website project! This is a responsive and modern portfoli
 ## Built With
 - **HTML/CSS Template**: For the base structure and styling.
 - **React**: For interactive and reusable UI components.
-- **Firebase**: For real-time database and contact form functionality.
+- **Node Js and MongoDB**: For real-time database and contact form functionality.
