@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { requsterApi } from "../../service/requester";
+import { useNavigate } from "react-router-dom";
 
 export default function Contact() {
   const [data, setData] = useState({
@@ -7,6 +8,8 @@ export default function Contact() {
     email: "",
     message: "",
   });
+
+  const navigate = useNavigate();
 
 
   const [error, setError] = useState(false);
@@ -34,6 +37,7 @@ export default function Contact() {
 
       setTimeout(() => {
         setSuccefulModal(false);
+        navigate('/')
       },4000)
         
     } catch (err) {
